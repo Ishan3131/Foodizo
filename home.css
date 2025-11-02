@@ -7,6 +7,8 @@ button{
     cursor: pointer;
 }
 
+/* ------------------------------------- Header --------------------------------------- */
+
 #header {
     background-image: url('./images/home_header_image.webp');
     background-size: cover;
@@ -33,6 +35,7 @@ button{
     color: white;
 }
 
+/* ----------------------------------- Nav Bar --------------------------------------- */
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -102,4 +105,58 @@ button{
 }
 #signup_btn:hover {
     box-shadow: 1px 1px 5px black;
+}
+
+/* ---------------------------------------- Address Input -------------------------------------- */
+#header_address_details {
+    width: fit-content;
+    margin: 10% auto;
+    text-align: center;
+}
+
+#header_address_details > h1 {
+    font-size: 40px;
+    color: white;
+    font-family: 'Helvetica';
+    font-weight: bold;
+    margin: 0;
+}
+
+#header_address_details > p {
+    font-size: 1015x;
+    color: white;
+    font-family: 'Hevetica';
+    font-weight: bold;
+    margin: 0;
+}
+
+#address_input_container {
+    background-color: white;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 10px 10px 10px 20px;
+    border-radius: 50px;
+}
+
+#address_input_container_location_symbol {
+    width: 20px;
+}
+
+#address_input {
+    font-size: 15px;
+    width: 300px;
+    outline: none;
+    border: none;
+}
+
+#address_input_container_next_btn {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #eb1700;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;padding-bottom: 4px;
 }
