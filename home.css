@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    height: 2000px;
 }
 
 button{
@@ -123,9 +122,9 @@ button{
 }
 
 #header_address_details > p {
-    font-size: 1015x;
+    font-size: 15px;
     color: white;
-    font-family: 'Hevetica';
+    font-family: 'Helvetica';
     font-weight: bold;
     margin: 0;
 }
@@ -159,4 +158,53 @@ button{
     height: 40px;
     border-radius: 20px;
     text-align: center;padding-bottom: 4px;
+}
+
+/* --------------------------------------------------- Earners Section --------------------------------------------- */
+#for_earners {
+    width: 100vw;
+}
+
+#earners_option {
+    display: flex;
+    justify-content: space-between;
+}
+
+.earners_container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    margin: 150px 0;
+}
+
+#delivery_container {
+    margin-left: 300px; 
+}
+
+#merchant_container {
+    margin-right: 300px;
+}
+
+.earners_btn {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: red;
+}
+.earners_btn:hover {
+    animation: btn_hover .3s forwards;
+}
+@keyframes btn_hover {
+    100% {
+        font-size: 25px;
+    }
+}
+
+.earners_content_text {
+    font-size: 18px;
+    font-family: 'Helvetica';
+    text-align: center;
 }
