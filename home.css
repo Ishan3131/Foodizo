@@ -6,6 +6,10 @@ button{
     cursor: pointer;
 }
 
+h1,h2,h3,h4,p {
+    cursor: default
+}
+
 /* ------------------------------------- Header --------------------------------------- */
 
 #header {
@@ -24,6 +28,10 @@ button{
 
 #header_title_logo {
     width: 90px;
+    transition: transform 1s ease;
+}
+#header_title_logo:hover {
+    transform: rotate(360deg);
 }
 
 #header_title {
@@ -151,8 +159,14 @@ button{
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    text-align: center;padding-bottom: 4px;
+    text-align: center;
+    padding-bottom: 4px;
+    transition: all .5s;
 }
+#address_input_container_next_btn:hover {
+    color: #f44322;
+}
+
 
 /* --------------------------------------------------- Earners Section --------------------------------------------- */
 #for_earners {
