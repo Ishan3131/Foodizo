@@ -84,22 +84,20 @@ button{
     padding: 8px 10px;
     width: fit-content;
     margin-right: auto;
+    transition: border-radius .5s;
+}
+.nav_btn:hover {
+    border-radius: 5px;
 }
 
 #signin_btn {
     background-color: rgb(235, 23, 0);
     color: white;
 }
-#signin_btn:hover {
-    box-shadow: 1px 1px 5px black;
-}
 
 #signup_btn {
     background-color: white;
     color: rgb(96, 96, 96);
-}
-#signup_btn:hover {
-    box-shadow: 1px 1px 5px black;
 }
 
 /* ---------------------------------------- Address Input -------------------------------------- */
@@ -201,4 +199,49 @@ button{
     font-size: 18px;
     font-family: 'Helvetica';
     text-align: center;
+}
+
+/* --------------------------------------------- Body Section ------------------------------------------------ */
+
+/* ------------------------------- Find restaurants ----------------------------------------- */
+#body_find_restaurants {
+    display: flex;
+}
+
+#body_find_restaurants_content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: left;
+    padding: 0 8%;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+#body_find_restaurants_content h2 {
+    font-size: 40px;
+    font-family: 'Helvetica';
+}
+
+#body_find_restaurants_content h4 {
+    font-size: 17px;
+    font-family: 'Helvetica';
+}
+
+#body_find_restaurants_content p {
+    font-family: 'Helvetica';
+}
+
+#body_find_restaurants_content a {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Helvetica';
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
 }
