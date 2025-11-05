@@ -1,12 +1,30 @@
-* {
+section:not(#header):not(body):not(html) * {
+    animation: scrolling .5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+@keyframes scrolling {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 button{
     cursor: pointer;
 }
 
-h1,h2,h3,h4,p {
+h,h1,h2,h3,h4,p {
     cursor: default
 }
 
@@ -50,6 +68,7 @@ h1,h2,h3,h4,p {
     width: 100vw;
     position: fixed;
     top: 0;
+    z-index: 999;
     transition: all .8s cubic-bezier(0.24, 0.65, 0.35, 1.03);
 }
 .scroll {
